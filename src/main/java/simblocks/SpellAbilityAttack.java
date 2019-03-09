@@ -1,3 +1,5 @@
+package simblocks;
+
 public class SpellAbilityAttack extends Attack {
 
 

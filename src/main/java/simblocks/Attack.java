@@ -1,3 +1,5 @@
+package simblocks;
+
 import java.security.SecureRandom;
 import java.util.Objects;
 

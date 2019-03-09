@@ -1,3 +1,9 @@
+package monstersims;
+
+import simblocks.Attack;
+import simblocks.Battle;
+import simblocks.Mob;
+
 import java.util.Arrays;
 
 public class MainBlueDragon {
@@ -21,12 +27,12 @@ public class MainBlueDragon {
             Mob a = new Mob.Builder()
                     .setAttacks(Arrays.asList(
                             new Attack(18, 2, 6, 11, Attack.AttackType.Normal)
-//                            new Attack(18, 1, 8, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 8, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 6, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 6, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 8, 5, Attack.AttackType.Normal),
-//                            new SpellAbilityAttack(0, 10, 8, 0, Attack.AttackType.Normal, 23, SpellAbilityAttack.SaveType.ref, false, 0, true)
+//                            new simblocks.Attack(18, 1, 8, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 8, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 6, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 6, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 8, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.SpellAbilityAttack(0, 10, 8, 0, simblocks.Attack.AttackType.Normal, 23, simblocks.SpellAbilityAttack.SaveType.ref, false, 0, true)
                     ))
                     .setHealth(189)
                     .setInitiative(0)
@@ -35,12 +41,12 @@ public class MainBlueDragon {
             Mob b = new Mob.Builder()
                     .setAttacks(Arrays.asList(
                             new Attack(18, 2, 6, 11, Attack.AttackType.Normal)
-//                            new Attack(18, 1, 8, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 8, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 6, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 6, 5, Attack.AttackType.Normal),
-//                            new Attack(18, 1, 8, 5, Attack.AttackType.Normal),
-//                            new SpellAbilityAttack(0, 10, 8, 0, Attack.AttackType.Normal, 23, SpellAbilityAttack.SaveType.ref, false, 0, true)
+//                            new simblocks.Attack(18, 1, 8, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 8, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 6, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 6, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.Attack(18, 1, 8, 5, simblocks.Attack.AttackType.Normal),
+//                            new simblocks.SpellAbilityAttack(0, 10, 8, 0, simblocks.Attack.AttackType.Normal, 23, simblocks.SpellAbilityAttack.SaveType.ref, false, 0, true)
                     ))
                     .setHealth(189)
                     .setInitiative(0)

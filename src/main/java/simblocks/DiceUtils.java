@@ -1,3 +1,5 @@
+package simblocks;
+
 import java.security.SecureRandom;
 
 public class DiceUtils {

@@ -1,3 +1,9 @@
+package monstersims;
+
+import simblocks.Attack;
+import simblocks.Battle;
+import simblocks.Mob;
+
 import java.util.Arrays;
 
 public class MainVrock {

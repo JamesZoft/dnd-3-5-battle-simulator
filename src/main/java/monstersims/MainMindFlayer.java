@@ -1,3 +1,10 @@
+package monstersims;
+
+import simblocks.Attack;
+import simblocks.Battle;
+import simblocks.Mob;
+import simblocks.SpellAbilityAttack;
+
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
