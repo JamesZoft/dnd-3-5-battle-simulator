@@ -15,14 +15,18 @@ public class MainFireGiant {
             Mob player = new Mob.Builder()
                     .setIsPlayer(true)
                     .setAttacks(Arrays.asList(
-                            new Attack(15, 6, 6, 14, Attack.AttackType.Normal),
-                            new Attack(15, 4, 6, 14, Attack.AttackType.Normal),
-                            new Attack(15, 4, 8, 9, Attack.AttackType.Normal),
-                            new Attack(10, 4, 8, 9, Attack.AttackType.Normal)
+                            new Attack(19, 6, 6, 30, Attack.AttackType.Normal),
+                            new Attack(14, 6, 6, 30, Attack.AttackType.Normal)
                     ))
-                    .setHealth(141)
+                    .setHealth(63)
                     .setInitiative(7)
                     .setNormalArmor(31)
+                    .setTouchArmor(21)
+                    .setRegenPerRound(5)
+//                    .setDamageReduction(10)
+                    .setFortSave(13)
+                    .setRefSave(20)
+                    .setWillSave(17)
                     .setRegenPerRound(5)
                     .createMob();
             Mob a = new Mob.Builder()

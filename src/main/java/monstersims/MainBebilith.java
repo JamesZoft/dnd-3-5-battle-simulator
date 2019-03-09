@@ -13,20 +13,23 @@ public class MainBebilith {
     private static long timetaken = 0L;
 
     public static void main(String[] args) {
-        double rounds = 10000.0;
-        IntStream.rangeClosed(0, (int)rounds).forEach(val -> {
-//            long curtime = System.currentTimeMillis();
+        int rounds = 10000;
+        IntStream.range(0, rounds).forEach(val -> {
             Mob player = new Mob.Builder()
                     .setIsPlayer(true)
                     .setAttacks(Arrays.asList(
-                            new Attack(15, 6, 6, 14, Attack.AttackType.Normal),
-                            new Attack(15, 4, 6, 14, Attack.AttackType.Normal),
-                            new Attack(15, 4, 8, 9, Attack.AttackType.Normal),
-                            new Attack(10, 4, 8, 9, Attack.AttackType.Normal)
+                            new Attack(19, 6, 6, 30, Attack.AttackType.Normal),
+                            new Attack(14, 6, 6, 30, Attack.AttackType.Normal)
                     ))
-                    .setHealth(141)
+                    .setHealth(63)
                     .setInitiative(7)
-                    .setNormalArmor(23)
+                    .setNormalArmor(31)
+                    .setTouchArmor(21)
+                    .setRegenPerRound(5)
+//                    .setDamageReduction(10)
+                    .setFortSave(13)
+                    .setRefSave(20)
+                    .setWillSave(17)
                     .setRegenPerRound(5)
                     .createMob();
             Mob a = new Mob.Builder()
@@ -53,7 +56,7 @@ public class MainBebilith {
                     .setNormalArmor(22)
                     .createMob();
 
-            Battle battle = new Battle(Arrays.asList(player, b, a));
+            Battle battle = new Battle(Arrays.asList(player,  a));
             battle.runBattle();
             if (battle.isFightWon())
                 battlesWon++;
@@ -61,7 +64,5 @@ public class MainBebilith {
 //            System.out.println(timetaken);
         });
         System.out.println("Battles won: " + battlesWon);
-        System.out.println(timetaken);
-        System.out.println("Average battle time: " + (timetaken / rounds));
     }
 }
